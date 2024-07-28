@@ -8,6 +8,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { navLinks } from "@/constants/navList";
 import { AnimatePresence, motion } from "framer-motion";
+import ThemeSwitch from "./themeswitch";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -111,28 +112,36 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-      <div
-        className="z-50 cursor-pointer block md:hidden"
-        onClick={handleToggle}
-      >
+      <div className="hidden md:block">
+        <ThemeSwitch />
+      </div>
+      <div className="flex md:hidden items-center gap-6">
+        <div className=" block md:hidden">
+          <ThemeSwitch />
+        </div>
         <div
-          className={cn(
-            "w-12 h-[.2rem] bg-primary mb-2 transition-all  cubic-bezier(.17,.67,.83,.67)",
-            open && "rotate-45 translate-y-1"
-          )}
-        ></div>
-        <div
-          className={cn(
-            "w-8 h-[.2rem] bg-primary mb-2 transition-all  cubic-bezier(.17,.67,.83,.67)",
-            open && "hidden"
-          )}
-        ></div>
-        <div
-          className={cn(
-            "w-4 h-[.2rem] bg-primary transition-all  cubic-bezier(.17,.67,.83,.67)",
-            open && "-rotate-45 w-12 -translate-y-2"
-          )}
-        ></div>
+          className="z-50 cursor-pointer block md:hidden"
+          onClick={handleToggle}
+        >
+          <div
+            className={cn(
+              "w-12 h-[.2rem] bg-primary mb-2 transition-all  cubic-bezier(.17,.67,.83,.67)",
+              open && "rotate-45 translate-y-1"
+            )}
+          ></div>
+          <div
+            className={cn(
+              "w-8 h-[.2rem] bg-primary mb-2 transition-all  cubic-bezier(.17,.67,.83,.67)",
+              open && "hidden"
+            )}
+          ></div>
+          <div
+            className={cn(
+              "w-4 h-[.2rem] bg-primary transition-all  cubic-bezier(.17,.67,.83,.67)",
+              open && "-rotate-45 w-12 -translate-y-2"
+            )}
+          ></div>
+        </div>
       </div>
       <AnimatePresence>
         {open && (
@@ -149,7 +158,7 @@ const Navbar = () => {
                 initial="initial"
                 animate="open"
                 exit="initial"
-                className="flex flex-col h-full justify-center font-lora items-center gap-4 "
+                className="flex flex-col h-full justify-center font-raleway items-center gap-4 "
               >
                 {navLinks.map((link, index) => {
                   return (

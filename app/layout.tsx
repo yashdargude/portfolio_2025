@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Raleway, Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
           raleway.variable,
@@ -32,7 +33,7 @@ export default function RootLayout({
           "flex min-h-screen flex-col "
         )}
       >
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
