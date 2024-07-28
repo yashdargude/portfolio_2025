@@ -2,32 +2,105 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: #F6F5F0;
+
+    --primary: #084CCF;
+
+    --secondary: #DDE4F1;
+
+    --accent: #E9EFF7;
+
+    --text-primary:#4B5361;
+    --text-muted:#A4A8AF;
+  }
+
+  .dark {
+    --background: #191919;
+
+    --primary: #0957E8;
+
+    --secondary: #F6F5F0;
+
+    --accent: #E9EFF7;
+
+    --text-primary:#4B5361;
+    --text-muted:#A4A8AF;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer base {
+  * {
+    @apply !scroll-smooth;
+  }
+  body {
+    @apply bg-background text-textPrimary font-nunito;
   }
 }
+
+@layer utilities{
+  .hover-underline::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 0rem;
+    bottom: 0rem;
+    background-color: var(--primary);
+    transition: all 0.3s linear;
+  }
+
+  .hover-underline:hover::before{
+    width:100%;
+  }
+
+  .hover-static--underline::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    left: 0rem;
+    bottom: 0rem;
+    background-color: var(--primary);
+    transition: all 0.3s linear;
+  }
+
+  .border-shadow-custom{
+    box-shadow: 10px 10px 0 rgba(8, 76, 207, 0.5);
+  }
+
+  .project-shadow-custom{
+    box-shadow: 10px 10px 0 var(--primary);
+  }
+
+  .project-shadow-custom:hover{
+    box-shadow: 10px 10px 0 rgba(8, 76, 207, 0.3);
+    background-color: rgba(8, 76, 207, 0.5);
+  }
+
+  .slideIn{
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100vh;
+    background: var(--primary);
+    transform-origin: bottom;
+    
+  }
+
+  .slideIn{
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100vh;
+    background: var(--primary);
+    transform-origin: top;
+    
+  }
+ 
+}
+
+
