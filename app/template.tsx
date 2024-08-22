@@ -44,7 +44,7 @@ export default function Template({ children }: transitionProps) {
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <Navbar />
-          <main className="px-6 md:px-12 lg:px-24 pt-12 mx-auto">
+          <main className="px-6 md:px-12 lg:px-24 pt-12 mx-auto max-w-screen-2xl">
             {children}
           </main>
           <Footer />

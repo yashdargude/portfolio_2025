@@ -30,7 +30,7 @@ export default function RootLayout({
         className={cn(
           raleway.variable,
           nunito.variable,
-          "flex min-h-screen flex-col "
+          "flex items-center min-h-screen flex-col "
         )}
       >
         <Providers>{children}</Providers>
