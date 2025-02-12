@@ -36,7 +36,7 @@ export default function Hero() {
               Icon={FiMail}
               className="bg-transparent border-textMuted text-textPrimary gap-6"
               iconClass="text-textMuted"
-              path="mailto:yashdargude567@gmail.com"
+              path="https://mail.google.com/mail/?view=cm&fs=1&to=yashdargude567@gmail.com&cc=yashdargude567@gmail.com"
               blank={true}
             >
               Mail me now
