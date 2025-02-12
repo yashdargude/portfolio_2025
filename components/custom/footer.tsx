@@ -18,19 +18,20 @@ export const Footer = () => {
           <ul className="flex flex-col ">
             <li className="text-background text-lg font-light flex items-center  gap-4">
               <FiMail className="h-4 w-4" />
-              <Link href={"mailto:rishikeshrevandikar3110@gmail.com"}>
-                rishikeshrevandikar3110@gmail.com
+              <Link href={"mailto:yashdargude567@gmail.com"} target="blank">
+                yashdargude567@gmail.com
               </Link>
             </li>
             <li className="text-background text-lg font-light flex items-center  gap-2">
               <PiPhoneCall className="h-4 w-4" />
-              <Link href={"tel:+91-8288055576"}>+91-8288055576</Link>
+              <Link href={"tel:+91-7038109240"}>+91-7038109240</Link>
             </li>
           </ul>
           <div className="grid grid-cols-2 gap-4">
             <Link
-              href={"/"}
+              href={"https://www.linkedin.com/in/yash-dargude-326a9622a/"}
               className="bg-background px-4 py-2 flex gap-2 items-center"
+              target="blank"
             >
               <FaLinkedin />
               <span>Linkedin</span>
@@ -38,6 +39,7 @@ export const Footer = () => {
             <Link
               href={"/"}
               className="bg-background px-4 py-2 flex gap-2 items-center"
+              target="blank"
             >
               <FaTwitter />
               <span>Twitter</span>
@@ -45,13 +47,15 @@ export const Footer = () => {
             <Link
               href={"/"}
               className="bg-background px-4 py-2 flex gap-2 items-center"
+              target="blank"
             >
               <RiInstagramFill />
               <span>Instagram</span>
             </Link>
             <Link
-              href={"/"}
+              href={"https://github.com/yashdargude/"}
               className="bg-background px-4 py-2 flex gap-2 items-center"
+              target="blank"
             >
               <FaGithub />
               <span>Github</span>
@@ -60,7 +64,7 @@ export const Footer = () => {
         </div>
         <div className="h-[.1rem] max-w-5xl items-center w-full bg-background mt-24"></div>
         <h5 className="text-white text-sm italic mt-12 font-light">
-          &copy; 2024 Rishkesh Revandikar, All Rights Reserved
+          &copy; 2025 Yash Dargude, All Rights Reserved
         </h5>
       </div>
     </footer>

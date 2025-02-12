@@ -1,4 +1,3 @@
-
 import Brief from "@/components/custom/brief";
 import Hero from "@/components/custom/hero";
 import Quote from "@/components/custom/quote";

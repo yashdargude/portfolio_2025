@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import profileImg from "@/public/rishi.png";
+import profileImg from "@/public/yash.png";
 import { Button } from "@/components/ui/button";
 import { FiDownload, FiMail } from "react-icons/fi";
 import BoxReveal from "../ui/boxreveal";
@@ -23,7 +23,7 @@ export default function Hero() {
         </BoxReveal>
         <BoxReveal boxColor="var(--primary)">
           <p className="text-textPrimary text-md md:text-lg font-light tracking-widest max-w-96 text-justify mb-12">
-            Hi, I’m Rishikesh Revandikar, a web developer from India. I’m
+            Hi, I’m Yash Dargude, a full stack developer from India. I’m
             passionate about creating innovative web solutions and have
             experience leading diverse projects. I’m always eager to tackle new
             challenges and improve my skills.
@@ -36,14 +36,15 @@ export default function Hero() {
               Icon={FiMail}
               className="bg-transparent border-textMuted text-textPrimary gap-6"
               iconClass="text-textMuted"
-              path="mailto:rishikeshrevandikar3110@gmail.com"
+              path="mailto:yashdargude567@gmail.com"
+              blank={true}
             >
               Mail me now
             </Button>
             <Button
               Icon={FiDownload}
               className="gap-6"
-              path="https://drive.google.com/file/d/1ZOhNYHCTEfb5SBcLvSbpU6xVp9ujshgZ/view?usp=drive_link"
+              path="https://drive.google.com/file/d/1-8VALGPBb1Fm5Kk59ukP0FGe27PwFq7G/view?usp=sharing"
               blank={true}
             >
               Resume
@@ -64,11 +65,11 @@ export default function Hero() {
         <div className="w-[22rem] md:w-[43rem] h-[2px] bg-blueOpacity-20 absolute right-8 -bottom-8 md:right-8 md:-bottom-12"></div>
 
         {/* image */}
-        <div className="bg-blue-50 bg-opacity-50 border-2 border-blueOpacity-50  border-shadow-custom w-[70%] md:w-[80%]">
+        <div className="bg-blue-50 bg-opacity-50 border-2 border-blueOpacity-50  border-shadow-custom w-[70%] md:w-[80%] ">
           <Image
             src={profileImg}
-            width={500}
-            height={500}
+            width={400}
+            height={400}
             alt="profile image"
             className=""
           />

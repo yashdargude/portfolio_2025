@@ -15,13 +15,15 @@ export default function Brief() {
         <Heading>About me in brief</Heading>
         <BoxReveal>
           <p className="text-textPrimary text-md md:text-lg font-light tracking-widest text-justify mb-10">
-            I&apos;m a web developer from India with a strong passion for
-            crafting innovative solutions and leading diverse projects. My keen
-            problem-solving skills, collaborative mindset, and commitment to
-            excellence drive me to tackle new challenges with enthusiasm. I’m
-            dedicated to continuous learning and delivering high-quality
-            results, always striving to exceed expectations and make a
-            meaningful impact.
+            Hi, I’m Yash Dargude, a Full-Stack Developer from India! I
+            specialize in building scalable, high-performance web applications
+            with a strong focus on problem-solving, system design, and user
+            experience. Passionate about innovation and continuous learning, I
+            thrive in collaborative environments, solving complex challenges and
+            delivering impactful solutions. Whether optimizing APIs for speed or
+            architecting robust backend systems, I aim to create efficient,
+            scalable, and user-friendly applications that drive meaningful
+            results. Let’s build something amazing together! 🚀
           </p>
         </BoxReveal>
         <div>

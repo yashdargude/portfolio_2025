@@ -5,8 +5,8 @@ import { cn } from "@/lib/utils";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
-  title: "Rishikesh",
-  description: `Hi, I’m Rishikesh Revandikar, a web developer from India. I’m
+  title: "Yash D | Portfolio",
+  description: `Hi, I’m Yash Dargude, a web developer from India. I’m
             passionate about creating innovative web solutions and have
             experience leading diverse projects. I’m always eager to tackle new
             challenges and improve my skills.`,
@@ -19,6 +19,7 @@ const raleway = Raleway({
 
 const nunito = Nunito_Sans({
   subsets: ["latin"],
+  weight: ["400", "700"],
   variable: "--font-nunito",
 });
 
