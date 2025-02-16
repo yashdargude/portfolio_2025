@@ -1,5 +1,5 @@
 import React from "react";
-import darkLogo from "@/public/darkLogo.png";
+import darkLogo from "@/public/y_dark.png";
 import Link from "next/link";
 import Image from "next/image";
 import { FiMail } from "react-icons/fi";

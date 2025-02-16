@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-import logo from "@/public/lightLogo.png";
+// import logo from "@/public/lightLogo.png";
+import logo2 from "@/public/y_light.png";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
@@ -78,7 +79,7 @@ const Navbar = () => {
       )}
     >
       <Image
-        src={logo}
+        src={logo2}
         width={45}
         height={45}
         alt="Logo"

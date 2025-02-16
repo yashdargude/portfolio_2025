@@ -10,6 +10,9 @@ export const metadata: Metadata = {
             passionate about creating innovative web solutions and have
             experience leading diverse projects. I’m always eager to tackle new
             challenges and improve my skills.`,
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 const raleway = Raleway({
@@ -21,6 +24,8 @@ const nunito = Nunito_Sans({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-nunito",
+  display: "swap",
+  fallback: ["sans-serif"],
 });
 
 export default function RootLayout({
