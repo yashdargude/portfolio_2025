@@ -31,10 +31,10 @@ export const projectList: projectData[] = [
     image: pr3,
     alt: "GreenGridin project",
   },
-  // {
-  //   title: "FindYourGuide",
-  //   link: "https://example4.com",
-  //   image: pr4,
-  //   alt: "FindYourGuide project",
-  // },
+  {
+    title: "Log-Stream Engine",
+    link: "https://log-stream-engine.vercel.app/",
+    image: pr5,
+    alt: "Log Stream Engine project",
+  },
 ];
