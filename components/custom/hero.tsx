@@ -44,7 +44,7 @@ export default function Hero() {
             <Button
               Icon={FiDownload}
               className="gap-6"
-              path="https://drive.google.com/file/d/1-8VALGPBb1Fm5Kk59ukP0FGe27PwFq7G/view?usp=sharing"
+              path="https://drive.google.com/file/d/1qlbmfikLbj1-euIGG8i90E2FWCzLOfUM/view?usp=sharing"
               blank={true}
             >
               Resume
