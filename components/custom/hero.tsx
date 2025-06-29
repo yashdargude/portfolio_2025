@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
-import profileImg from "@/public/yash.png";
+import profileImg from "@/public/Image June 10 2025 from remove.bg (1) (1).jpg";
+
 import { Button } from "@/components/ui/button";
 import { FiDownload, FiMail } from "react-icons/fi";
 import BoxReveal from "../ui/boxreveal";
